@@ -1,0 +1,79 @@
+@use '../mixin.scss' as *;
+
+.project {
+    padding: 60px 0;
+
+    &__title {
+        font-weight: 700;
+        font-size: clamp(1.5rem, 4vw, 2.625rem);
+        line-height: 1.1;
+        margin-bottom: 40px;
+
+        @include respond('md') {
+            font-size: 24px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @include respond('lg') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond('md') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        width: 377px;
+        height: 597px;
+        border-width: 1px;
+        border-radius: 19px;
+        border: 1px solid;
+        overflow: hidden;
+        background: #1215237D;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: border-color 0.3s ease-in-out;
+        padding: 38px;
+
+        &:hover {
+            border-color: #1078D7;;
+        }
+
+        img {
+            width: 300px;
+            height: 210px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 117%;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 148%;
+            color: rgba(255, 255, 255, 0.8);
+
+            span {
+                color: rgba(255, 255, 255, 0.29);
+            }
+
+            &:nth-child(2n) {
+                border-top: 1px solid #FFFFFF17;
+                border-bottom: 1px solid #FFFFFF17;
+                padding: 15px 0;
+                margin: 15px 0;
+            }
+        }
+    }
+}

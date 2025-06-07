@@ -1,0 +1,105 @@
+@use '../mixin.scss' as *;
+
+.footer {
+    background-color: #0c0d23;
+    padding: 90px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include respond('md') {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include respond('md') {
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        &-icon {
+            color: #1078D7;
+        }
+
+        h5 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 141%;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 164%;
+                margin: 5px 0;
+
+                span {
+                    color: rgba(255, 255, 255, 0.33);
+                }
+            }
+        }
+    }
+
+    &__nav {
+        h5 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 141%;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 141%;
+                    color: rgba(255, 255, 255, 0.8);
+                    transition: color 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #1078D7;
+                    }
+                }
+            }
+        }
+
+        .footer__btn {
+            border-radius: 4px;
+            padding: 8px 20px;
+            gap: 10px;
+            background: #1078D7;
+            transition: background 0.3s ease-in-out;
+
+            &:hover {
+                background: #1077d7d4;
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        &-icon {
+            path {
+                fill: #1078D7;
+            }
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use 'components/header';
+@use 'components/slider';
+@use 'components/advantages';
+@use 'components/projects';
+@use 'components/project';
+@use 'components/footer';
+
+@import '@qpokychuk/gilroy/index.css';
+@import '@qpokychuk/gilroy/normal.css';
+@import '@qpokychuk/gilroy/italic.css';
+
+$text-primary: #FFFFFF;
+$text-secondary: #FFFFCC;
+$accent-color: #FFFFFF4A;
+$container-max-width: 1200px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(123.79deg, #00011A 22.27%, #0F0F0F 94.29%);
+    color: $text-primary;
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 15px;
+}
