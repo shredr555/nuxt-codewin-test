@@ -1,10 +1,16 @@
-# Nuxt Minimal Starter
+# Nuxt project
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+скачайте или кнонируйте репозиторий
+
+```bash
+
+git clone https://github.com/USERNAME/REPO_NAME.git
+
+```
 
 ## Setup
 
-Make sure to install dependencies:
+Установка зависимостей
 
 ```bash
 # npm
@@ -22,7 +28,7 @@ bun install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Заупск проекта в режиме разработчика `http://localhost:3000`:
 
 ```bash
 # npm
@@ -40,7 +46,7 @@ bun run dev
 
 ## Production
 
-Build the application for production:
+Сборка проекта для продакшена:
 
 ```bash
 # npm
@@ -56,7 +62,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Локальный просомтр собранного продакшен-проекта:
 
 ```bash
 # npm
@@ -72,4 +78,4 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Документация: [deployment documentation](https://nuxt.com/docs/getting-started/deployment)
